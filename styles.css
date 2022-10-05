@@ -31,9 +31,10 @@ body {
   gap: 4rem;
   flex-wrap: wrap;
 }
-.flex-item {
-  /*    flex: 1 1 auto; */
-}
+
+/* .flex-item {
+     flex: 1 1 auto;
+} */
 
 .recipes-container img {
   height: 500px;
