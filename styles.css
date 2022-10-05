@@ -1,0 +1,20 @@
+* {
+    /* outline: 2px solid red; */
+}
+body {
+    background-color: #d6b0af;
+}
+.logo-style {
+    height: auto;
+    width: 200px;
+}
+.center-img {
+    display: block;
+    margin: 0 auto;
+}
+.center-text {
+    text-align: center;
+}
+.title-text-style {
+    color: white;
+}
