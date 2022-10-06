@@ -4,6 +4,10 @@
 
 body {
 background: rgb(214,176,175);
+    font-family: 'Ubuntu';
+  font-size: 16px;
+  color: #510609;
+  line-height: 1.8rem;
 }
 
 .heading {
@@ -21,8 +25,7 @@ background: rgb(214,176,175);
   text-align: center;
   color: white;
   margin: -2rem 0 0 0;
-  font-family: fantasy;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .landing-container {
@@ -30,14 +33,11 @@ background: rgb(214,176,175);
   justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
-/*   height:min-content; */
 }
 
 .landing-container > * {
  flex-basis: 30%;
-/*  background: #e87889; */
  min-width:300px;
-/*  color: white */
 }
 
 .landing-container img {
@@ -59,66 +59,53 @@ background: rgb(214,176,175);
   color: #440706;
 }
 
-
-
+.flex-item a {
+  text-decoration: none;
+}
 
 .recipes-container {
     display: flex;
-    flex-flow: column;
-/*       gap: 2rem; */
-/*       justify-content: space-evenly; */
-    align-items: flex-start;
-/*       align-items: center; */
-/*       padding-left: 100px; */
-/*       align-content:flex-end; */
-    outline: 10px solid red;
-/*       min-height: 200vh; */
+    flex-flow: row wrap;
+      gap: 1rem;
+    justify-content: center;
   padding: 10px;
 }
 
  .recipes-container > * {
-   border: 10px solid green;
-   background:gray;
-   
-   flex-grow: 1;      /* default 0 */
-   flex-shrink: 1;    /* default 1 */
-   flex-basis: auto;  /* default auto */
-
-   
+   flex-basis: 75%;  
  }
 
-.recipe-head {
-
-  
-}
 .recipe-head img {
-/*       height: auto;
+    height: auto;
     width:1000px;
-    max-width: 100%; */
+    max-width: 100%;
+  border-radius: 15px;
 }
 
-.recipe-head h1 {
-
+.recipe-head h1:nth-child(1) {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 3rem;
 }
 
-.recipes-container .description {
-/*   flex: 1 0 %20; */
-/*   white-space: nowrap; */
-}
 
-.recipes-container .ingredients {
-/*     flex:1; */
-/*   padding: 0 100px; */
-/*   white-space:nowrap; */
+ .credit-link {
+  display: flex;
+  padding: 20px;
+  justify-content:center;
   
-}
- .recipes-container .steps {
-    
  }
-
-/* #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            
-} */
+ 
+  footer {
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 100px;
+   padding-bottom: 2rem;
+   gap: 2rem;
+   justify-content: center;
+  }
+  
+  footer img{
+   height: auto;
+   width: 30px;
+  }
