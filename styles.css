@@ -3,20 +3,20 @@
 }
 
 body {
-background: rgb(214,176,175);
-    font-family: 'Ubuntu';
+  background: rgb(214, 176, 175);
+  font-family: "Ubuntu";
   font-size: 16px;
   color: #510609;
   line-height: 1.8rem;
 }
 
 .heading {
-    margin-top: 20px;
-    margin-bottom: 80px;
+  margin-top: 0px;
+  margin-bottom: 80px;
 }
 .heading .logo {
   height: auto;
-  width: 200px;
+  width: 180px;
   display: block;
   margin: 0 auto;
 }
@@ -25,7 +25,7 @@ background: rgb(214,176,175);
   text-align: center;
   color: white;
   margin: -2rem 0 0 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .landing-container {
@@ -36,8 +36,11 @@ background: rgb(214,176,175);
 }
 
 .landing-container > * {
- flex-basis: 30%;
- min-width:300px;
+  flex-basis: 30%;
+  min-width: 300px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .landing-container img {
@@ -64,48 +67,61 @@ background: rgb(214,176,175);
 }
 
 .recipes-container {
-    display: flex;
-    flex-flow: row wrap;
-      gap: 1rem;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: center;
   padding: 10px;
 }
 
- .recipes-container > * {
-   flex-basis: 75%;  
- }
+.recipes-container > * {
+  flex-basis: 75%;
+}
 
 .recipe-head img {
-    height: auto;
-    width:1000px;
-    max-width: 100%;
+  height: auto;
+  width: 1000px;
+  max-width: 100%;
   border-radius: 15px;
 }
 
-.recipe-head h1:nth-child(1) {
-  padding-top: 30px;
+.title-text {
+  margin-top: 0px;
   padding-bottom: 10px;
   font-size: 3rem;
+  line-height: 3rem;
 }
 
+.cookie-img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
 
- .credit-link {
+.description,
+.ingredients,
+.steps {
+  background: white;
+  padding: 5px 15px 10px 15px;
+  border-radius: 15px;
+}
+
+.credit-link {
   display: flex;
   padding: 20px;
-  justify-content:center;
-  
- }
- 
-  footer {
-   display: flex;
-   flex-wrap: wrap;
-   padding-top: 100px;
-   padding-bottom: 2rem;
-   gap: 2rem;
-   justify-content: center;
-  }
-  
-  footer img{
-   height: auto;
-   width: 30px;
-  }
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+footer img {
+  height: auto;
+  width: 30px;
+}
