@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #d6b0af;
+background: rgb(214,176,175);
 }
 
 .heading {
@@ -25,36 +25,100 @@ body {
   font-size: 1.3rem;
 }
 
-.recipes-container {
+.landing-container {
   display: flex;
   justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
+/*   height:min-content; */
 }
 
-/* .flex-item {
-     flex: 1 1 auto;
-} */
+.landing-container > * {
+ flex-basis: 30%;
+/*  background: #e87889; */
+ min-width:300px;
+/*  color: white */
+}
 
-.recipes-container img {
-  height: 500px;
-  width: 500px;
+.landing-container img {
+  height: 400px;
+  width: 100%;
   object-fit: cover;
   object-position: 20% 50%;
-  border-radius: 15px;
+  border-radius: 10px;
   transition: transform 0.2s;
 }
 
-.recipes-container img:hover {
+.landing-container img:hover {
   outline: 4px solid white;
   transform: scale(1.04);
 }
 
-.recipes-container h3 {
+.landing-container h3 {
   font-size: 1.2rem;
   color: #440706;
 }
 
-footer {
-  padding: 100px;
+
+
+
+.recipes-container {
+    display: flex;
+    flex-flow: column;
+/*       gap: 2rem; */
+/*       justify-content: space-evenly; */
+    align-items: flex-start;
+/*       align-items: center; */
+/*       padding-left: 100px; */
+/*       align-content:flex-end; */
+    outline: 10px solid red;
+/*       min-height: 200vh; */
+  padding: 10px;
 }
+
+ .recipes-container > * {
+   border: 10px solid green;
+   background:gray;
+   
+   flex-grow: 1;      /* default 0 */
+   flex-shrink: 1;    /* default 1 */
+   flex-basis: auto;  /* default auto */
+
+   
+ }
+
+.recipe-head {
+
+  
+}
+.recipe-head img {
+/*       height: auto;
+    width:1000px;
+    max-width: 100%; */
+}
+
+.recipe-head h1 {
+
+}
+
+.recipes-container .description {
+/*   flex: 1 0 %20; */
+/*   white-space: nowrap; */
+}
+
+.recipes-container .ingredients {
+/*     flex:1; */
+/*   padding: 0 100px; */
+/*   white-space:nowrap; */
+  
+}
+ .recipes-container .steps {
+    
+ }
+
+/* #footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            
+} */
